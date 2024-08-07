@@ -44,6 +44,7 @@ body {
   background-position: center;
   position: relative;
   display: flex;
+  background-repeat: no-repeat; /* Prevent repetition */
   justify-content: center;
   align-items: center;
 }
