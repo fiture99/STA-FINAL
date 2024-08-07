@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light fixed-top">
       <div className="container-fluid">
-        <a className="navbar-brand me-auto" href="/" style={{ marginLeft: 0 }}>
+        <a className="navbar-brand me-auto" href="#" style={{ marginLeft: 0 }}>
           <img src={logo} alt="Company Logo" style={{ height: '80px', width: '240px' }} />
         </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav m-auto">
             <li className="nav-item">
-              <a className="nav-link" href="/" onClick={handleNavLinkClick}>Home</a>
+              <a className="nav-link" href="#" onClick={handleNavLinkClick}>Home</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#about" onClick={handleNavLinkClick}>About Us</a>

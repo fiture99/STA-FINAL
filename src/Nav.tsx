@@ -7,7 +7,7 @@ import Home from './pages/Index'
 export function Nav(){
     return(
         <Routes>
-            <Route path="/" element={<Home/>} />
+            <Route path="/home" element={<Home/>} />
             {/* <Route path="/about" element={<About/>} /> */}
             
         </Routes>
