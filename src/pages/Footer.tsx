@@ -16,7 +16,7 @@ const Footer = () => {
               <li><a href="" className="social-icon"><i className="fab fa-linkedin-in"></i></a></li>
               <li><a href="" className="social-icon"><i className="fab fa-instagram"></i></a></li>
             </ul>
-            <p className="mt-4">&copy; {new Date().getFullYear()} Taibatou Tech. All rights reserved.</p>
+            <p className="mt-4">&copy; {new Date().getFullYear()} Taibatou Services. All rights reserved.</p>
           </div>
         </div>
       </div>
