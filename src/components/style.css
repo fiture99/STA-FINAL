@@ -303,7 +303,8 @@ html {
   }
 
   .welcome {
-    font-size: 28px;
+    margin-top: 70px;
+    font-size: 26px;
   }
 
   .section {
@@ -337,9 +338,16 @@ html {
     height: 700px;
   }
 
-  .welcome {
-    font-size: 24px;
+   .welcome {
+    margin-top: 70px;
+    font-size: 20px;
+    text-align: center;
   }
+
+  /* .wel {
+    padding-top: 70px;
+    font-size: 25px;
+  }  */
 
   .section {
     padding: 40px 0;
@@ -378,7 +386,13 @@ html {
 
   .welcome {
     margin-top: 70px;
-    font-size: 20px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .wel {
+    margin-top: 40px;
+    font-size: 25px;
   }
 
   .section {
