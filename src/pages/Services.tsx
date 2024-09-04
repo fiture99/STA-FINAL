@@ -16,7 +16,7 @@ const services: Service[] = [
     details: 'We provide a full range of CCTV installation services, including system design, equipment sourcing, installation, and maintenance to ensure your security needs are fully met.'
   },
   {
-    title: 'Exchange and Domain',
+    title: 'Exchange & Domain',
     icon: 'fas fa-exchange-alt',
     description: 'Expert management of exchange and domain services.',
     details: 'Our team handles everything from domain registration to email exchange management, ensuring seamless communication and domain management for your business.'
@@ -64,24 +64,27 @@ export function Services() {
 
   return (
     <div id="services" className="section">
-      <div className='container'>
-        <h1 style={{ marginTop: '60px' }}>Our Services</h1>
-        <div className="row">
-          {services.map((service, index) => (
-            <div className="col-md-4" key={index}>
-              <div className="card mb-4 shadow-sm" onClick={() => handleDetails(service)}>
-                <div className="card-body text-center">
-                  <i className={`${service.icon} fa-3x mb-3`} aria-hidden="true"></i>
-                  <h5 className="card-title">{service.title}</h5>
-                  <p className="card-text">{service.description}</p>
-                </div>
-              </div>
+  <div className='container'>
+    <h1 style={{ marginTop: '60px' }}>Our Services</h1>
+    <div className="row justify-content-center">
+      {services.map((service, index) => (
+        <div className="col-md-4" key={index}>
+          <div className="card mb-4 shadow-sm" onClick={() => handleDetails(service)}>
+            <div className="card-body text-center">
+              <i className={`${service.icon} fa-3x mb-3`} aria-hidden="true"></i>
+              <h5 className="card-title">{service.title}</h5>
+              <p className="card-text">{service.description}</p>
+              <button className="card-button">View Details</button>
             </div>
-          ))}
+          </div>
         </div>
-        <hr className="section-separator" />
-      </div>
+      ))}
     </div>
+    <hr className="section-separator" />
+  </div>
+</div>
+
+
   );
 };
 

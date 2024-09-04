@@ -2,6 +2,7 @@
 import '../components/style.css';
 import trustbank from '../assets/trustbank.svg'
 import gbos from '../assets/gbos.svg'
+import radville from '../assets/radvile.svg'
 
 export function Partners() {
   return (
@@ -11,6 +12,7 @@ export function Partners() {
       <div className=''>
         <img src={trustbank} className='pat-image' alt='trust' />
         <img src={gbos} className='pat-image' alt='gbos' />
+        <img src={radville} className='pat-image' alt='radville' />
         {/* <img src={gbos} alt='gbos' style={{height:'200px', width:'300px', margin:'10px'}} />
         <img src={gbos} alt='gbos' style={{height:'200px', width:'300px', margin:'10px'}} />
         <img src={gbos} alt='gbos' style={{height:'200px', width:'300px', margin:'10px'}} />
