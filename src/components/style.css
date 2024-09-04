@@ -339,6 +339,7 @@ html {
 
   .card {
     max-width: 300px;
+    height: auto;
   }
 
   .card-body {
