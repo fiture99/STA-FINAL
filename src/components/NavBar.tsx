@@ -19,8 +19,8 @@ const Navbar = () => {
       <a className="navbar-brand d-flex justify-content-center" href="" style={{overflow: 'hidden'}}>
       <img src={logo} alt="Company Logo" style={{ height: '79px', width: '240px'}} />
     </a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" onClick={handleNavLinkClick} data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"  ></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav m-auto">
