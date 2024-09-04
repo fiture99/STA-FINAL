@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://fiture99.github.io/STA-FINAL/",
+  "homepage": "https://stagambia.net/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
