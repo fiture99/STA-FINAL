@@ -69,12 +69,12 @@ export function Services() {
     <div className="row justify-content-center">
       {services.map((service, index) => (
         <div className="col-md-4" key={index}>
-          <div className="card mb-4 shadow-sm" onClick={() => handleDetails(service)}>
+          <div className="card mb-4 shadow-sm" >
             <div className="card-body text-center">
               <i className={`${service.icon} fa-3x mb-3`} aria-hidden="true"></i>
               <h5 className="card-title">{service.title}</h5>
               <p className="card-text">{service.description}</p>
-              <button className="card-button">View Details</button>
+              <button className="card-button" onClick={() => handleDetails(service)}>View Details</button>
             </div>
           </div>
         </div>
