@@ -17,7 +17,7 @@ const Footer = () => {
               <li><a href="" className="social-icon"><i className="fab fa-instagram"></i></a></li>
             </ul>
             <p className="mt-4">&copy; {new Date().getFullYear()} STA. All rights reserved.</p>
-            <p>Website built by <a href="https://fiture99.github.io/Nyakoi-Services/" target="_blank" rel="noopener noreferrer" className="text-yellow-600 hover:underline">Nyakoi Services</a></p>
+            <p>Website built by <a href="https://nyakoi-services.onrender.com/" target="_blank" rel="noopener noreferrer" className="text-yellow-600 hover:underline">Nyakoi Services</a></p>
 
           </div>
         </div>
