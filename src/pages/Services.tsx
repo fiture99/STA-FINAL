@@ -52,7 +52,7 @@ export function Services() {
     Swal.fire({
       title: service.title,
       text: service.details,
-      icon: 'success',
+      icon: 'info',
       confirmButtonText: 'Close',
       customClass: {
         container: 'custom-swal-container',
@@ -64,27 +64,31 @@ export function Services() {
 
   return (
     <div id="services" className="section">
-  <div className='container'>
-    <h1 style={{ marginTop: '60px' }}>Our Services</h1>
-    <div className="row justify-content-center">
-      {services.map((service, index) => (
-        <div className="col-md-4" key={index}>
-          <div className="card mb-4 shadow-sm" >
-            <div className="card-body text-center">
-              <i className={`${service.icon} fa-3x mb-3`} aria-hidden="true"></i>
-              <h5 className="card-title">{service.title}</h5>
-              <p className="card-text">{service.description}</p>
-              <button className="card-button" onClick={() => handleDetails(service)}>View Details</button>
-            </div>
-          </div>
+      <div className='container'>
+        <div className="about-badge">
+          <i className="fas fa-cogs"></i> What We Offer
         </div>
-      ))}
+        <h1 className="section-title">Our Services</h1>
+        <p className="section-subtitle">Comprehensive technology and security solutions built for reliability.</p>
+        <div className="row justify-content-center">
+          {services.map((service, index) => (
+            <div className="col-md-4 d-flex justify-content-center" key={index}>
+              <div className="card mb-4">
+                <div className="card-body text-center">
+                  <div className="card-icon-wrap">
+                    <i className={service.icon} aria-hidden="true"></i>
+                  </div>
+                  <h5 className="card-title">{service.title}</h5>
+                  <p className="card-text">{service.description}</p>
+                  <button className="card-button" onClick={() => handleDetails(service)}>View Details</button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <hr className="section-separator" />
+      </div>
     </div>
-    <hr className="section-separator" />
-  </div>
-</div>
-
-
   );
 };
 
